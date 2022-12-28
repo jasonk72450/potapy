@@ -31,15 +31,11 @@ def generate_all():
 
  
 def pota_cq(other_call, park):
-    return f"""
-CQ POTA {other_call} {park} K
-    """.strip()
+    return f"CQ POTA {other_call} {park} K"
 
 
 def pota_1(other_call, rst, pota_state):
-    return f"""
-{my_call} {rst} {pota_state} TU
-    """.strip()
+    return f"{my_call} {rst} {pota_state} TU"
 
 
 if __name__ == '__main__':
